@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vue Intro</title>        
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <style type="text/css">
+            .list {
+                float: left;
+                display: block;
+                width: 50%;
+                height: 300px;
+                position: relative;
+            }
+            .btn {
+                position:absolute;
+                bottom:0;
+                left:40%;
+            }
+            li {
+                list-style-type: none; 
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <div class="list">
+                <ul>
+                    <li v-for="item in toDoArray">
+                        {{ item }}
+                    </li>
+                </ul>
+                <button @click="transfer(toDoArray, doneArray)" class="btn">Transfer</button>
+            </div>
+            <div class="list">
+                <ul>
+                    <li v-for="item in doneArray">
+                        {{ item }}
+                    </li>
+                </ul>
+                <button @click="transfer(doneArray, toDoArray)" class="btn">Transfer</button>
+            </div>
+        </div>
+        <script src="1.js"></script>
+    </body>
+</html>
