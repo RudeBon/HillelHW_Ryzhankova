@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <form id="LoginForm" onsubmit="return false">
+        <div class="FormInput">
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username">
+        </div>
+        <div class="FormInput">
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password">
+        </div>
+        <div class="FormInput" id="LoginSubmitDiv">
+            <input type="submit" value="Login">
+        </div>
+    </form>
+    
+    <div id="LoggedIn">
+        <p></p>
+    </div>
+
+    <div id="Orders">
+        <p></p>
+    </div>
+
+    <input id="GetOrderButton" type="submit" value="Get Orders" style="display:none;"/>
+
+
+</body>
+
+</html>

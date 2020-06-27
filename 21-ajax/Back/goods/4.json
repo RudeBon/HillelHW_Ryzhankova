@@ -1,0 +1,19 @@
+{
+    "Orders": [
+        {
+            "Title": "Laptop",
+            "Price": 1800,
+            "Quantity": 1
+        },
+        {
+            "Title": "iPhone 7",
+            "Price": 650,
+            "Quantity": 1
+        },
+        {
+            "Title": "Mouse XS",
+            "Price": 14,
+            "Quantity": 3
+        }
+    ]
+}
